@@ -1,0 +1,68 @@
+/*Syntaxe CSS
+
+selector {
+    vlastnost-1: hodnota;
+    vlastnost-2: hodnota;
+    vlastnost-3: hodnota;
+    vlastnost-4: hodnota;
+    ...
+    vlastnost-n: hodnota;
+}
+
+*/
+
+.page-wrapper {
+    /*max-width: 80%;*/
+    width: 80%;
+    margin: 0 auto; /*Zarovnání na střed*/
+    background-color: #f2c4cb;
+    text-decoration-color: darkmagenta;
+    padding: 30px;
+}
+body {
+    background-color: white;
+}
+ h2 {
+    color: #6f026f;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ h3 {
+    color: #6f026f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 5px;
+    padding: 0;
+}
+a {
+    color: darkviolet;
+}
+nav a {
+    color:white;
+    background-color: #6f026f;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #b00ab0;
+}
+.grid-container {
+    display: grid;
+    /* grid-template-columns: auto auto; */
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;  
+}
+.card {
+    background-color: rgb(251, 224, 224);
+    padding: 20px;
+    border-radius: 10px;
+}
+footer {
+    color: #6f026f;
+}
