@@ -42,7 +42,7 @@ a {
     color: darkviolet;
 }
 nav a {
-    color:white;
+    color:#ffffff;
     background-color: #6f026f;
     text-decoration: none;
     padding: 5px;
@@ -59,10 +59,39 @@ nav a:hover {
     gap: 10px;  
 }
 .card {
-    background-color: rgb(251, 224, 224);
+    background-color: #fbe0e0;
     padding: 20px;
     border-radius: 10px;
 }
 footer {
     color: #6f026f;
+}
+.java {
+    color: black;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+    padding: 5px;
+}
+
+.gallery-item {
+    background-color: #fbe0e0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
 }

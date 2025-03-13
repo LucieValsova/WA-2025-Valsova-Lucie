@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucie Valsová</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+    <header>
+        <h2>WA - první web</h2>
+    </header>
+        <nav>
+            <!--Navigace pomocí odrážek-->
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="#">O nás</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+        <main> 
+        <div class="gallery-container">
+                    <figure class="gallery-item">
+                        <img src="assets/images/dummy_500x300_ffffff_ff00ff.png" alt="Trulli">
+                        <figcaption>Obrázek 1</figcaption>
+                      </figure>
+                      <figure class="gallery-item">
+                        <img src="assets/images/dummy_500x300_ffffff_ff00ff (1).png" alt="Trulli">
+                        <figcaption>Obrázek 2</figcaption>
+                      </figure>
+                      <figure class="gallery-item">
+                        <img src="assets/images/dummy_500x300_ffffff_ff00ff (2).png" alt="Trulli">
+                        <figcaption>Obrázek 3</figcaption>
+                      </figure>
+                      <figure class="gallery-item">
+                        <img src="assets/images/dummy_500x300_ffffff_ff00ff (3).png" alt="Trulli">
+                        <figcaption>Obrázek 4</figcaption>
+                      </figure>
+                      <figure class="gallery-item">
+                        <img src="assets/images/dummy_500x300_ffffff_ff00ff (4).png" alt="Trulli">
+                        <figcaption>Obrázek 5</figcaption>
+                      </figure>
+                      <figure class="gallery-item">
+                        <img src="assets/images/dummy_500x300_ffffff_ff00ff (5).png" alt="Trulli">
+                        <figcaption>Obrázek 6</figcaption>
+                      </figure>
+
+    </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Lucie Valsová</p>
+        <p class="java">Tady můžeš měnit barvu pozadí :o</p>
+        <input type="color" id="colorPicker" value="#ffffff">
+    </footer>
+    </div>
+    <!--java-->
+    <script>
+        const colorPicker = document.getElementById('colorPicker');
+        const body = document.body;
+        const textElements = document.querySelectorAll('h1, p');
+
+
+        colorPicker.addEventListener('input', () => {
+            const color = colorPicker.value;
+            body.style.background = color;
+           
+            // Převod hex na RGB
+            const r = parseInt(color.substr(1, 2), 16);
+            const g = parseInt(color.substr(3, 2), 16);
+            const b = parseInt(color.substr(5, 2), 16);
+           
+            // Výpočet světlosti (luminance) podle vnímání oka
+            const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+           
+            // Pokud je světlost vysoká, nastavíme černý text, jinak bílý
+            //const textColor = luminance > 0.5 ? 'black' : 'white';
+            //textElements.forEach(el => el.style.color = textColor);
+        });
+    </script>
+
+    </body>
+</html>
