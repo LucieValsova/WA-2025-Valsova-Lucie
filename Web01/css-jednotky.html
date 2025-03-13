@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Jednotky</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+     <div class="page-wrapper">
+    <header>
+        <h2>WA - první web</h2>
+    </header>
+        <nav>
+            <!--Navigace pomocí odrážek-->
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="01-Bootstrap/index.html">Bootstrap web</a></li>
+                <li><a href="css-jednotky.html">CSS jednotky</a></li>
+                <li><a href="#">O nás</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+            </ul>
+        </nav>
+        <section class="articles" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
+            <div class="article" style="flex: 1 1 calc(50% - 2rem); padding: 2rem; border: 1px solid #ccc; border-radius: 1rem; background: #f9f9f9; font-size: 1.2rem;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1ch;">Co jsou CSS jednotky?</h3>
+                <p style="margin-bottom: 2vh;">CSS jednotky určují, jak budou vypadat rozměry a mezery v layoutu. Dělí se na absolutní a relativní.</p>
+            </div>
+
+            <div class="article" style="flex: 1 1 calc(50% - 2rem); padding: 2rem; border: 1px solid #ccc; border-radius: 1rem; background: #f9f9f9; font-size: 1.2rem;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1ch;">Rozdíl mezi px a rem</h3>
+                <p>Px je pevná jednotka, zatímco rem je relativní k velikosti písma kořenového prvku (`html`).</p>
+            </div>
+
+            <div class="article" style="flex: 1 1 calc(50% - 2rem); padding: 2rem; border: 2px dashed #aaa; border-radius: 2vw; background: #e8f6ff; font-size: 1.3rem;">
+                <h3 style="font-size: 2rem; margin-bottom: 2ch;">Jak funguje em?</h3>
+                <p style="padding: 1em;">Em se škáluje podle rodičovského prvku. Například tento text má padding `1em`, což odpovídá velikosti písma této sekce.</p>
+            </div>
+
+            <div class="article" style="flex: 1 1 calc(50% - 2rem); padding: 2rem; border: 1px solid #000; border-radius: 10px; background: #ffefdb; font-size: 1.1rem;">
+                <h3 style="font-size: 1.8rem;">Použití vh a vw</h3>
+                <p style="height: 10vh; overflow: auto;">Tento prvek má výšku `10vh`, což znamená, že se jeho výška mění podle velikosti okna.</p>
+            </div>
+        </section>
+
+        <footer style="margin-top: 5vh; background: #34495e; color: white; text-align: center; padding: 2vh; font-size: 1rem;">
+            <p style="letter-spacing: 0.2ch;">© 2025 WA - Všechna práva vyhrazena.</p>
+        </footer>
+       
+</body>
+</html>
